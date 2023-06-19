@@ -1,0 +1,8 @@
+C:\Users\Manu\source\repos\GestionHospital\GestionHospital\obj\Debug\GestionHospital.csproj.AssemblyReference.cache
+C:\Users\Manu\source\repos\GestionHospital\GestionHospital\obj\Debug\GestionHospital.csproj.SuggestedBindingRedirects.cache
+C:\Users\Manu\source\repos\GestionHospital\GestionHospital\obj\Debug\GestionHospital.csproj.CoreCompileInputs.cache
+C:\Users\Manu\source\repos\GestionHospital\GestionHospital\bin\Debug\GestionHospital.exe.config
+C:\Users\Manu\source\repos\GestionHospital\GestionHospital\bin\Debug\GestionHospital.exe
+C:\Users\Manu\source\repos\GestionHospital\GestionHospital\bin\Debug\GestionHospital.pdb
+C:\Users\Manu\source\repos\GestionHospital\GestionHospital\obj\Debug\GestionHospital.exe
+C:\Users\Manu\source\repos\GestionHospital\GestionHospital\obj\Debug\GestionHospital.pdb
