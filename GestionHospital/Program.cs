@@ -71,7 +71,6 @@ namespace GestionHospital
                 hospital.ListarPacientes();
                 int posPaciente = int.Parse(Console.ReadLine());
                 hospital.PersonalPaciente.RemoveAt(posPaciente);
-
             }
         }
 
@@ -86,7 +85,6 @@ namespace GestionHospital
             Console.WriteLine("6) Ver la lista de personas presentes en el hospital");
             Console.WriteLine("7) Salir");
             Console.Write("Seleccione una opción: ");
-
         }
 
 
@@ -118,7 +116,7 @@ namespace GestionHospital
 
         public static Medico CrearMedico() 
         {
-          Persona persona = GenerarPersona();
+            Persona persona = GenerarPersona();
 
             Console.WriteLine("\tInformacion Personal Medico :");
             Console.WriteLine("Numero Colegiado: ");
@@ -136,12 +134,12 @@ namespace GestionHospital
 
             Console.WriteLine("\tInformacion Paciente :");
             Console.WriteLine("Numero Paciente: ");
+
             int numeroPaciente = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Enfermedad: ");
             String enfermedad = Console.ReadLine();
 
-            // MIRAR SI PONEMOS AQUI LA ASIGNACION DE PACIENTES O SE HACE EN OTRO LADO 
             return (new Paciente(persona, numeroPaciente, enfermedad));
         }
 
@@ -150,13 +148,9 @@ namespace GestionHospital
             Paciente paciente = CrearPaciente();
 
             hospital.PersonalPaciente.Add(paciente);
-            // a que medico quieres asignarlo 
             hospital.ListarNombreMedicos();
-            //accion de asignar un medico 
-            int posMedico = int.Parse(Console.ReadLine());
-            
+            int posMedico = int.Parse(Console.ReadLine());    
             hospital.PersonalMedico[posMedico].addPaciente(paciente);
-
         }
 
         public static void ListarPacienteDeMedico(Hospital hospital) 
@@ -166,7 +160,6 @@ namespace GestionHospital
             hospital.ListarNombreMedicos();
             int  posMedico = int.Parse(Console.ReadLine());
             hospital.PersonalMedico[posMedico].ListarPacientes();
-
         }
     }
 }

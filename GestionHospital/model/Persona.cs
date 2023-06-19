@@ -53,6 +53,7 @@ namespace GestionHospital.model
         public override string ToString()
         {
             string sexoString = "Desconocido";
+
             if (sexo == 0)
                 sexoString = "Hombre";
             else if (sexo == 1)
@@ -64,7 +65,6 @@ namespace GestionHospital.model
 
         public string NombreCompleto() 
         {
-
             return nombre + " " + apellido;
         }
     }

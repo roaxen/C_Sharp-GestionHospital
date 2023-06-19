@@ -15,7 +15,6 @@ namespace GestionHospital.model
 
         public string Nombre { get => nombre; set => nombre = value; }
         public List<Medico> PersonalMedico { get => personalMedico; set => personalMedico = value; }
-
         public List<Paciente> PersonalPaciente { get => personalPaciente; set => personalPaciente = value; }
         public Hospital()
         {
@@ -51,7 +50,6 @@ namespace GestionHospital.model
             foreach (Medico m in personalMedico) 
             {
                 Console.WriteLine(incremental++ +") Nombre: "+m.Nombre+" "+m.Apellido+", Especialidad: "+m.Especialidad);
-            
             }
         }
 
@@ -60,7 +58,6 @@ namespace GestionHospital.model
             foreach (Medico m in personalMedico)
             {
                 Console.WriteLine(m.ToString());
-
             }
         }
 
@@ -68,9 +65,9 @@ namespace GestionHospital.model
         {
             int incremental = 0;
             foreach (Paciente p in personalPaciente)
-           
+            {
                 Console.WriteLine(incremental++ + p.NombreCompleto());
-
+            }    
         }
 
          public void ListarPersonasHospital()
@@ -79,9 +76,6 @@ namespace GestionHospital.model
             ListarMedicos();
             Console.WriteLine("-- Pacientes --");
             ListarPacientes();
-
         }
-
-
     }
 }

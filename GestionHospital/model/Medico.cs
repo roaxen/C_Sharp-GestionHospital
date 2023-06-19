@@ -17,8 +17,7 @@ namespace GestionHospital.model
         public List<Paciente> ListaPacientes { get => listaPacientes; set => listaPacientes = value; }
 
         public Medico() 
-        {
-        }
+        {}
 
         public Medico(Persona persona, int numeroColegiado, string especialidad) : base(persona)
         {
